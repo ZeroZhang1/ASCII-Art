@@ -19,7 +19,7 @@ class ASCII_Art:
 
     def display(self):
         self.__construct_str()
-        print(f"\033[1;32;40m{self.str}\033[0m")
+        print(f"\033[1;32;40m{self.str}\033[0m")  # 如果想改变输出颜色或背景，可以修改这里
 
     def resize(self, new_height, new_weight):
         self.img_loader.resize(new_height, new_weight)
